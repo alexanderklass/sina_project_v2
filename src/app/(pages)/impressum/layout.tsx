@@ -8,9 +8,9 @@ export interface ILayout {
 
 export const metadata: Metadata = {
     title: "Sina's Schmetterlinge",
-    description: "Startseite von Sina's schmetterlinge",
+    description: "Impressum von Sina's schmetterlinge",
 };
 
-export default function Layout({ children }: Readonly<ILayout>) {
+export default function ImpressumLayout({ children }: Readonly<ILayout>) {
     return <BasicLayout>{children}</BasicLayout>;
 }
