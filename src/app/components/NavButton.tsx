@@ -1,7 +1,7 @@
 'use client';
 import { Josefin_Sans } from 'next/font/google';
 import React from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 
 export interface NavButtonProps {
     children: React.ReactNode;
@@ -15,15 +15,30 @@ const josefin_sans = Josefin_Sans({
 
 export default function NavButton({ children, href }: NavButtonProps) {
     const router = useRouter();
+    const pathname = usePathname();
 
-    const handleClick = () => {
-        if (href) {
-            router.push(href);
-        }
+    const handleScrollToBottom = () => {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    };
+
+    const handleRouteChange = () => {
+        if (href) router.push(href);
+    };
+
+    const handleNavButtonClick = () => {
+        if (href === '/impressum') return handleScrollToBottom();
+        handleRouteChange();
     };
     return (
-        <button onClick={handleClick} className={`${josefin_sans.className} font-bold cursor-pointer`}>
+        <button
+            onClick={handleNavButtonClick}
+            className={`${josefin_sans.className} group relative font-bold cursor-pointer`}
+        >
             {children}
+
+            <div
+                className={`${pathname === href ? 'w-full' : ''} w-0 absolute transition-all duration-300 h-1 group-hover:w-full rounded-full bg-black`}
+            ></div>
         </button>
     );
 }

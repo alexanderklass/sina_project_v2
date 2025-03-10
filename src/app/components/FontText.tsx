@@ -13,8 +13,8 @@ export interface FontTextProps {
 
 export default function FontText({ className, children, ...props }: FontTextProps) {
     return (
-        <text className={`${josefin_sans.className} ${className}`} {...props}>
+        <span className={`${josefin_sans.className} ${className}`} {...props}>
             {children}
-        </text>
+        </span>
     );
 }
