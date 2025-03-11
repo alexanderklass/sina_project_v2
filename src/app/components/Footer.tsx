@@ -2,7 +2,7 @@ import React from 'react';
 import FontText from './FontText';
 import TitleFontText from '@/app/components/TitleFontText';
 import Image from 'next/image';
-import flyerKids from '@/assets/images/footer-kids.png';
+import flyerKids from '@/app/assets/images/footer-kids.png';
 
 export default function Footer() {
     return (
@@ -21,7 +21,7 @@ export default function Footer() {
                 src={flyerKids}
                 alt={'3 kids walking faced forwards'}
             />
-            <div className={'w-full flex items-center justify-center ring-2 ring-black rounded-xl h-full'}>MAP</div>
+            <div className={'w-full flex items-center justify-center ring-2 ring-black rounded-xl h-full'}>KARTE</div>
         </footer>
     );
 }

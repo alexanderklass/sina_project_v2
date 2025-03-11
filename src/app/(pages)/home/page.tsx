@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import FontText from '@/app/components/FontText';
-import profilePicStock from '@/assets/images/woman-stock.jpg';
-import penStock from '@/assets/images/pen-stock.jpg';
 import TitleFontText from '@/app/components/TitleFontText';
+import branch from '@/app/assets/images/branch.png';
+import penStock from '@/app/assets/images/pen-stock.jpg';
+import profilePicStock from '@/app/assets/images/woman-stock.jpg';
 
 export default function Home() {
     return (
         <main className={`h-full`}>
-            <section className={'w-full h-[800px] flex items-center justify-center flex-row'}>
+            <section className={'w-full h-screen relative flex items-center justify-center flex-row'}>
                 <div
                     className={
                         'w-full h-full pt-32 animate-fade-right duration-500 bg-[#F5EFE7] flex items-center justify-center'
@@ -17,7 +18,7 @@ export default function Home() {
                         alt={'close up from woman'}
                         className={'rounded-xl ring-2 ring-black'}
                         src={profilePicStock}
-                        width={400}
+                        width={350}
                     />
                 </div>
                 <div className={'w-full pt-32 flex animate-fade-left duration-500 items-center justify-center'}>
@@ -32,11 +33,15 @@ export default function Home() {
                         </FontText>
                     </div>
                 </div>
+                <Image
+                    className={'absolute scale-x-[-1] -rotate-[50deg] right-2 -bottom-10'}
+                    width={350}
+                    src={branch}
+                    alt={'branch with leafs'}
+                />
             </section>
 
-            <section
-                className={'bg-[#DCE4C9] w-full h-[800px] flex items-center justify-center flex-row-reverse px-20'}
-            >
+            <section className={'bg-[#DCE4C9] w-full h-screen flex items-center justify-center flex-row-reverse px-20'}>
                 <div className={'w-full flex items-center justify-center'}>
                     <Image
                         alt={'close up from woman'}
@@ -59,7 +64,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className={'bg-[#F5EFE7] w-full h-[800px] flex items-center justify-center flex-row px-20'}>
+            <section className={'bg-[#F5EFE7] w-full h-screen flex items-center justify-center flex-row px-20'}>
                 <div className={'w-full flex items-center justify-center'}>
                     <Image
                         alt={'close up from woman'}
