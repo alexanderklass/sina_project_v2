@@ -1,15 +1,9 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-    async redirects() {
-        return [
-            {
-                source: '/',
-                destination: '/home',
-                permanent: true,
-            },
-        ];
-    },
+    output: 'export',
+    basePath: '/sina_project',
+    assetPrefix: '/sina_project',
 };
 
 export default nextConfig;
