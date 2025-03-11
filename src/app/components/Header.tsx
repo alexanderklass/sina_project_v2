@@ -12,7 +12,7 @@ export default function Header() {
         <nav className={`z-10 items-center absolute top-0 w-full justify-between flex flex-row p-5 px-20`}>
             <div className={'flex flex-row items-center justify-center'}>
                 <div className={'space-y-1 flex flex-col items-center justify-center'}>
-                    <TitleFontText className={'text-2xl'}>Sina&aois;s Schmetterlinge</TitleFontText>
+                    <TitleFontText className={'text-2xl'}>Sina's Schmetterlinge</TitleFontText>
                     <FontText>KINDERTAGESPFLEGE</FontText>
                 </div>
                 <div className={'w-12'}>
