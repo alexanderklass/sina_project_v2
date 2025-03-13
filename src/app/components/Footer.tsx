@@ -6,7 +6,7 @@ import flyerKids from '@/app/assets/images/footer-kids.png';
 
 export default function Footer() {
     return (
-        <footer className={'bg-white h-[250px] relative w-full p-5 flex flex-row items-center justify-center'}>
+        <footer className={'bg-white h-[250px] flex relative w-full p-5 flex-row items-center justify-center'}>
             <div className={`w-full flex items-center translate-x-28 space-y-5 justify-center flex-col`}>
                 <TitleFontText className={'text-2xl'}>Impressum</TitleFontText>
                 <FontText className={'w-[350px]'}>

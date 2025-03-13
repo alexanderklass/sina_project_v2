@@ -4,16 +4,12 @@ import TitleFontText from '@/app/components/TitleFontText';
 import branch from '@/app/assets/images/branch.png';
 import penStock from '@/app/assets/images/pen-stock.jpg';
 import profilePicStock from '@/app/assets/images/woman-stock.jpg';
-
+import greenButterfly from '@/app/assets/images/butterfly-green.png';
 export default function Home() {
     return (
         <main className={`h-full`}>
             <section className={'w-full h-screen relative flex items-center justify-center flex-row'}>
-                <div
-                    className={
-                        'w-full h-full pt-32 animate-fade-right duration-500 bg-[#F5EFE7] flex items-center justify-center'
-                    }
-                >
+                <div className={'w-full h-full pt-32 bg-[#F5EFE7] flex items-center justify-center'}>
                     <Image
                         alt={'close up from woman'}
                         className={'rounded-xl ring-2 ring-black'}
@@ -21,7 +17,7 @@ export default function Home() {
                         width={350}
                     />
                 </div>
-                <div className={'w-full pt-32 flex animate-fade-left duration-500 items-center justify-center'}>
+                <div className={'w-full pt-32 flex items-center justify-center'}>
                     <div className={'space-y-5 flex flex-col items-center justify-center w-[600px]'}>
                         <TitleFontText className={'self-start text-3xl'}>Über mich</TitleFontText>
                         <FontText>
@@ -34,14 +30,18 @@ export default function Home() {
                     </div>
                 </div>
                 <Image
-                    className={'absolute scale-x-[-1] -rotate-[50deg] right-2 -bottom-10'}
+                    className={'absolute scale-x-[-1] -rotate-[50deg] right-0 -bottom-10'}
                     width={350}
                     src={branch}
                     alt={'branch with leafs'}
                 />
             </section>
 
-            <section className={'bg-[#DCE4C9] w-full h-screen flex items-center justify-center flex-row-reverse px-20'}>
+            <section
+                className={
+                    'bg-[#DCE4C9] w-full h-screen relative flex items-center justify-center flex-row-reverse px-20'
+                }
+            >
                 <div className={'w-full flex items-center justify-center'}>
                     <Image
                         alt={'close up from woman'}
@@ -62,6 +62,13 @@ export default function Home() {
                         </FontText>
                     </div>
                 </div>
+                <Image
+                    className={'absolute left-10 bottom-10'}
+                    width={150}
+                    height={150}
+                    src={greenButterfly}
+                    alt={'green butterfly'}
+                />
             </section>
 
             <section className={'bg-[#F5EFE7] w-full h-screen flex items-center justify-center flex-row px-20'}>
