@@ -11,6 +11,6 @@ export const metadata: Metadata = {
     description: "Startseite von Sina's schmetterlinge",
 };
 
-export default function Layout({ children }: Readonly<ILayout>) {
+export default function HomeLayout({ children }: Readonly<ILayout>) {
     return <BasicLayout>{children}</BasicLayout>;
 }

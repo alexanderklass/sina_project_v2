@@ -1,2 +1,25 @@
 @import 'tailwindcss';
-@import "tailwindcss-animated";
+@import 'tailwindcss-animated';
+
+:root {
+    --pastel-green: #dce4c9;
+    --pastel-beige: #f5efe7;
+    --pastel-pink: #ce8da1;
+    --pastel-yellow: #fbf0b0;
+}
+
+.bg-pastel-green {
+    background-color: var(--pastel-green);
+}
+
+.bg-pastel-beige {
+    background-color: var(--pastel-beige);
+}
+
+.bg-pastel-yellow {
+    background-color: var(--pastel-yellow);
+}
+
+.bg-pastel-pink {
+    background-color: var(--pastel-pink);
+}
