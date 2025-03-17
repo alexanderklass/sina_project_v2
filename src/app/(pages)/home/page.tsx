@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import FontText from '@/app/components/FontText';
 import TitleFontText from '@/app/components/TitleFontText';
