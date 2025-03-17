@@ -10,7 +10,6 @@ import garden_water from '@/app/assets/images/garden-water-flower.jpg';
 import grass from '@/app/assets/images/grass.png';
 import butterfly_flying_animation from '@/app/assets/animations/yellow-butterfly-animation.json';
 import flower_butterfly_animation from '@/app/assets/animations/flower-butterfly-animation.json';
-import bee_flying_animation from '@/app/assets/animations/bee-flying-animation.json';
 
 export default function Garden() {
     return (
@@ -36,8 +35,7 @@ export default function Garden() {
                 </div>
                 <div className={'w-full h-full bg-pastel-green flex items-center justify-center'}>
                     <Image
-                        className={'rounded-xl ring-2 ring-black'}
-                        width={500}
+                        className={'rounded-xl ring-2 ring-black w-[400px] 2xl:w-[500px]'}
                         src={garden_butterfly}
                         alt={'garden'}
                     />
@@ -46,7 +44,12 @@ export default function Garden() {
 
             <ColorSection direction={'row'} color={'bg-pastel-beige'}>
                 <div className={'w-full h-full flex items-center justify-center'}>
-                    <Image className={'rounded-xl ring-2 ring-black'} width={700} src={garden_flower} alt={'garden'} />
+                    <Image
+                        className={'rounded-xl ring-2 ring-black w-[550px] 2xl:w-[700px]'}
+                        width={700}
+                        src={garden_flower}
+                        alt={'garden'}
+                    />
                 </div>
                 <div className={'flex relative items-center justify-center w-full h-full'}>
                     <div className={'max-w-[500px] flex flex-col items-center justify-center space-y-5'}>
@@ -59,7 +62,7 @@ export default function Garden() {
                             et facilis ipsa itaque magnam natus soluta ut!
                         </FontText>
                     </div>
-                    <div className={'absolute bottom-0 right-36 w-[350px]'}>
+                    <div className={'absolute bottom-0 right-36 w-[250px] 2xl:w-[350px]'}>
                         <Animation animationData={flower_butterfly_animation} loop={true} />
                     </div>
                 </div>
@@ -77,12 +80,14 @@ export default function Garden() {
                             et facilis ipsa itaque magnam natus soluta ut!
                         </FontText>
                     </div>
-                    <div className={'absolute bottom-20 left-72 w-[350px]'}>
-                        <Animation animationData={bee_flying_animation} loop={true} />
-                    </div>
                 </div>
                 <div className={'w-full h-full flex items-center justify-center'}>
-                    <Image className={'rounded-xl ring-2 ring-black'} width={500} src={garden_water} alt={'garden'} />
+                    <Image
+                        className={'rounded-xl ring-2 ring-black w-[400px] 2xl:w-[500px]'}
+                        width={500}
+                        src={garden_water}
+                        alt={'garden'}
+                    />
                 </div>
             </ColorSection>
         </main>

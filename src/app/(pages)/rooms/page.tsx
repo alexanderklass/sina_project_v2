@@ -32,7 +32,7 @@ export default function Rooms() {
                     initial={{ x: '-100%' }}
                     animate={{ x: '80vw' }}
                     transition={{ duration: 15, ease: 'linear' }}
-                    className={'absolute left-0 -bottom-16 w-80'}
+                    className={'absolute left-0 -bottom-10 2xl:-bottom-16 w-52 2xl:w-80'}
                 >
                     <Animation animationData={toy_animation} />
                 </motion.div>

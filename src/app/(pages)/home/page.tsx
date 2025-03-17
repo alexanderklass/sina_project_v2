@@ -17,7 +17,7 @@ export default function Home() {
                 <div className={'w-full h-full pt-32 bg-pastel-beige flex items-center justify-center'}>
                     <Image
                         alt={'close up from woman'}
-                        className={'rounded-xl w-full max-w-[500px] ring-2 ring-black'}
+                        className={'rounded-xl w-[400px] 2xl:w-[500px] ring-2 ring-black'}
                         src={profilePicStock}
                     />
                 </div>
@@ -34,9 +34,7 @@ export default function Home() {
                     </div>
                 </div>
                 <Image
-                    className={
-                        'absolute scale-x-[-1] w-[] md:w-[300px] lg:w-[500px] -rotate-[50deg] right-2 -bottom-10'
-                    }
+                    className={'absolute scale-x-[-1] w-[300px] 2xl:w-[500px] -rotate-[50deg] right-2 -bottom-10'}
                     src={branch}
                     alt={'branch with leafs'}
                 />
@@ -58,15 +56,12 @@ export default function Home() {
                 <div className={'w-full flex items-center justify-center'}>
                     <Image
                         alt={'close up from woman'}
-                        className={'rounded-xl ring-2 ring-black'}
+                        className={'rounded-xl ring-2 w-[600px] 2xl:w-[800px] ring-black'}
                         src={penStock}
-                        width={800}
                     />
                 </div>
                 <Image
-                    width={200}
-                    height={200}
-                    className={'absolute left-10 bottom-10 '}
+                    className={'absolute left-10 bottom-10 w-[150px] 2xl:w-[200px]'}
                     src={butterflyGreen}
                     alt={'green butterfly'}
                 />
@@ -76,9 +71,8 @@ export default function Home() {
                 <div className={'w-full flex items-center justify-center'}>
                     <Image
                         alt={'close up from woman'}
-                        className={'rounded-xl ring-2 ring-black'}
+                        className={'rounded-xl ring-2 w-[600px] 2xl:w-[800px] ring-black'}
                         src={penStock}
-                        width={800}
                     />
                 </div>
                 <div className={'w-full flex items-center justify-center'}>
@@ -94,9 +88,7 @@ export default function Home() {
                     </div>
                 </div>
                 <Image
-                    width={300}
-                    height={300}
-                    className={'absolute right-10 bottom-10 '}
+                    className={'absolute right-10 bottom-10 w-[150px] 2xl:w-[200px]'}
                     src={butterflyPink}
                     alt={'pink butterfly'}
                 />

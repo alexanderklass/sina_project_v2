@@ -7,18 +7,24 @@ export default function Collage() {
         <div className={'flex flex-col w-full space-y-1 items-center justify-center'}>
             <div className={'flex flex-row w-full items-center justify-center space-x-1'}>
                 <Image
-                    className={` rounded-xl border-2 self-end border-black`}
-                    width={450}
+                    className={`rounded-xl w-[250px] 2xl:w-[450px]  border-2 self-end border-black`}
                     src={playRoom1}
                     alt={'play room 1'}
                 />
-                <Image className={`rounded-xl border-2 border-black`} width={550} src={playRoom2} alt={'play room 2'} />
+                <Image
+                    className={`rounded-xl border-2 w-[350px]  2xl:w-[550px] border-black`}
+                    src={playRoom2}
+                    alt={'play room 2'}
+                />
             </div>
             <div className={'flex flex-row space-x-1 w-full items-center justify-center'}>
-                <Image className={`rounded-xl border-2 border-black`} width={550} src={playRoom2} alt={'play room 2'} />
                 <Image
-                    className={`rounded-xl border-2 self-start border-black`}
-                    width={450}
+                    className={`rounded-xl border-2 w-[350px] 2xl:w-[550px] border-black`}
+                    src={playRoom2}
+                    alt={'play room 2'}
+                />
+                <Image
+                    className={`rounded-xl w-[250px] 2xl:w-[450px] border-2 self-start border-black`}
                     src={playRoom1}
                     alt={'play room 1'}
                 />
