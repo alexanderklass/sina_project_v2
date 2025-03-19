@@ -35,6 +35,7 @@ export default function Garden() {
                 </div>
                 <div className={'w-full h-full bg-pastel-green flex items-center justify-center'}>
                     <Image
+                        placeholder={'blur'}
                         className={'rounded-xl ring-2 ring-black w-[400px] 2xl:w-[500px]'}
                         src={garden_butterfly}
                         alt={'garden'}
@@ -45,6 +46,7 @@ export default function Garden() {
             <ColorSection direction={'row'} color={'bg-pastel-beige'}>
                 <div className={'w-full h-full flex items-center justify-center'}>
                     <Image
+                        placeholder={'blur'}
                         className={'rounded-xl ring-2 ring-black w-[550px] 2xl:w-[700px]'}
                         width={700}
                         src={garden_flower}
@@ -83,6 +85,7 @@ export default function Garden() {
                 </div>
                 <div className={'w-full h-full flex items-center justify-center'}>
                     <Image
+                        placeholder={'blur'}
                         className={'rounded-xl ring-2 ring-black w-[400px] 2xl:w-[500px]'}
                         width={500}
                         src={garden_water}

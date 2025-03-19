@@ -10,11 +10,13 @@ export default function Collage() {
                     className={`rounded-xl w-[250px] 2xl:w-[450px]  border-2 self-end border-black`}
                     src={playRoom1}
                     alt={'play room 1'}
+                    placeholder={'blur'}
                 />
                 <Image
                     className={`rounded-xl border-2 w-[350px]  2xl:w-[550px] border-black`}
                     src={playRoom2}
                     alt={'play room 2'}
+                    placeholder={'blur'}
                 />
             </div>
             <div className={'flex flex-row space-x-1 w-full items-center justify-center'}>
@@ -22,11 +24,13 @@ export default function Collage() {
                     className={`rounded-xl border-2 w-[350px] 2xl:w-[550px] border-black`}
                     src={playRoom2}
                     alt={'play room 2'}
+                    placeholder={'blur'}
                 />
                 <Image
                     className={`rounded-xl w-[250px] 2xl:w-[450px] border-2 self-start border-black`}
                     src={playRoom1}
                     alt={'play room 1'}
+                    placeholder={'blur'}
                 />
             </div>
         </div>

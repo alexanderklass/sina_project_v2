@@ -16,6 +16,7 @@ export default function Home() {
             <ColorSection direction={'row'}>
                 <div className={'w-full h-full pt-32 bg-pastel-beige flex items-center justify-center'}>
                     <Image
+                        placeholder={'blur'}
                         alt={'close up from woman'}
                         className={'rounded-xl w-[400px] 2xl:w-[500px] ring-2 ring-black'}
                         src={profilePicStock}
@@ -55,12 +56,14 @@ export default function Home() {
                 </div>
                 <div className={'w-full flex items-center justify-center'}>
                     <Image
+                        placeholder={'blur'}
                         alt={'close up from woman'}
                         className={'rounded-xl ring-2 w-[600px] 2xl:w-[800px] ring-black'}
                         src={penStock}
                     />
                 </div>
                 <Image
+                    placeholder={'blur'}
                     className={'absolute left-10 bottom-10 w-[150px] 2xl:w-[200px]'}
                     src={butterflyGreen}
                     alt={'green butterfly'}
@@ -70,6 +73,7 @@ export default function Home() {
             <ColorSection direction={'row'} color={'bg-pastel-beige'}>
                 <div className={'w-full flex items-center justify-center'}>
                     <Image
+                        placeholder={'blur'}
                         alt={'close up from woman'}
                         className={'rounded-xl ring-2 w-[600px] 2xl:w-[800px] ring-black'}
                         src={penStock}
@@ -88,6 +92,7 @@ export default function Home() {
                     </div>
                 </div>
                 <Image
+                    placeholder={'blur'}
                     className={'absolute right-10 bottom-10 w-[150px] 2xl:w-[200px]'}
                     src={butterflyPink}
                     alt={'pink butterfly'}
