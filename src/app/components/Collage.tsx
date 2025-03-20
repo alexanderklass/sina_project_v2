@@ -1,5 +1,5 @@
-import playRoom1 from '@/app/assets/images/play-room-1.jpg';
-import playRoom2 from '@/app/assets/images/play-room-2.jpg';
+import playRoom1 from '@/app/assets/images/rooms/play-room-1.jpg';
+import playRoom2 from '@/app/assets/images/rooms/play-room-2.jpg';
 import Image from 'next/image';
 
 export default function Collage() {

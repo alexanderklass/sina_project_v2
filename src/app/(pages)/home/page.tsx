@@ -4,17 +4,18 @@ import FontText from '@/app/components/FontText';
 import TitleFontText from '@/app/components/TitleFontText';
 import ColorSection from '@/app/components/ColorSection';
 
-import branch from '@/app/assets/images/branch.png';
-import penStock from '@/app/assets/images/pen-stock.jpg';
-import profilePicStock from '@/app/assets/images/woman-stock.jpg';
-import butterflyGreen from '@/app/assets/images/butterfly-green.png';
-import butterflyPink from '@/app/assets/images/butterfly-pink.png';
+import branch from '@/app/assets/images/home/branch.png';
+import penStock from '@/app/assets/images/home/pen-stock.jpg';
+import profilePicStock from '@/app/assets/images/home/woman-stock.jpg';
+import butterflyGreen from '@/app/assets/images/home/butterfly-green.png';
+import butterflyPink from '@/app/assets/images/home/butterfly-pink.png';
+import React from 'react';
 
 export default function Home() {
     return (
         <main>
             <ColorSection direction={'row'}>
-                <div className={'w-full h-full pt-32 bg-pastel-beige flex items-center justify-center'}>
+                <div className={'w-full h-full bg-pastel-beige flex items-center justify-center'}>
                     <Image
                         placeholder={'blur'}
                         alt={'close up from woman'}
@@ -22,7 +23,7 @@ export default function Home() {
                         src={profilePicStock}
                     />
                 </div>
-                <div className={'w-full h-full p-5 flex items-center justify-center'}>
+                <div className={'w-full h-full p-5 flex flex-col items-center justify-center'}>
                     <div className={'space-y-5 flex flex-col items-center justify-center max-w-[500px]'}>
                         <TitleFontText className={'self-start text-3xl'}>Über mich</TitleFontText>
                         <FontText>
@@ -32,6 +33,14 @@ export default function Home() {
                             dolore expedita quas veritatis vero! Molestiae quae soluta tempora! Culpa cum dolor dolorem
                             et facilis ipsa itaque magnam natus soluta ut!
                         </FontText>
+                        <button
+                            type={'button'}
+                            className={
+                                'self-start ring-2 cursor-pointer rounded-xl bg-white  ring-black p-2 hover:bg-black hover:text-white duration-300'
+                            }
+                        >
+                            <FontText>Anfragen unter 0123/45678910</FontText>
+                        </button>
                     </div>
                 </div>
                 <Image

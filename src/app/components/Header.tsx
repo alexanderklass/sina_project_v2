@@ -8,7 +8,7 @@ import butterFlyAnimation from '@/app/assets/animations/butterfly-animation.json
 export default function Header() {
     return (
         <nav
-            className={`z-10 items-center w-full absolute top-0 md:justify-between flex flex-row py-7 px-10 md:p-5 md:px-20`}
+            className={`z-10 items-center w-full fixed bg-white/0.5 backdrop-blur-md shadow-md top-0 md:justify-between flex flex-row py-7 px-10 md:p-5 md:px-20`}
         >
             <div className={'flex w-full md:w-auto flex-row items-center justify-center'}>
                 <div className={'space-y-1 flex flex-col items-center justify-center'}>

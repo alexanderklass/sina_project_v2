@@ -4,10 +4,10 @@ import TitleFontText from '@/app/components/TitleFontText';
 import FontText from '@/app/components/FontText';
 import Image from 'next/image';
 import Animation from '@/app/components/Animation';
-import garden_butterfly from '@/app/assets/images/garden-butterfly-on-leaf.jpg';
-import garden_flower from '@/app/assets/images/garden-flower-pot.jpg';
-import garden_water from '@/app/assets/images/garden-water-flower.jpg';
-import grass from '@/app/assets/images/grass.png';
+import garden_butterfly from '@/app/assets/images/garden/garden-butterfly-on-leaf.jpg';
+import garden_flower from '@/app/assets/images/garden/garden-flower-pot.jpg';
+import garden_water from '@/app/assets/images/garden/garden-water-flower.jpg';
+import grass from '@/app/assets/images/garden/grass.png';
 import butterfly_flying_animation from '@/app/assets/animations/yellow-butterfly-animation.json';
 import flower_butterfly_animation from '@/app/assets/animations/flower-butterfly-animation.json';
 
@@ -20,7 +20,7 @@ export default function Garden() {
                         <TitleFontText className={'self-start text-3xl'}>Über mich</TitleFontText>
                         <FontText>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aperiam aspernatur
-                            ducimus ea enim esse eum illo illum inventore modi, mollitia nemo neque officia possimus
+                            ducimus ea enim esse eum illo illum inventore modi, mollitia nemo neque officia possimusnm
                             quas tempora ut voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
                             dolore expedita quas veritatis vero! Molestiae quae soluta tempora! Culpa cum dolor dolorem
                             et facilis ipsa itaque magnam natus soluta ut!
