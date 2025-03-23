@@ -2,7 +2,7 @@ import React from 'react';
 
 export interface ColorSectionProps extends React.HTMLAttributes<HTMLDivElement> {
     children?: React.ReactNode;
-    direction: 'col' | 'row';
+    direction: 'col' | 'row' | 'col-reverse';
     color?: string;
 }
 
@@ -12,13 +12,15 @@ export default function ColorSection({ children, direction, color, ...props }: C
             case 'col':
                 return 'flex-col';
             case 'row':
-                return 'flex-col xl:flex-row';
+                return 'flex-col lg:flex-row';
+            case 'col-reverse':
+                return 'flex-col-reverse xl:flex-row';
         }
     };
     return (
         <section
             {...props}
-            className={`${handleDirection()} ${color} flex w-full h-screen relative items-center justify-center`}
+            className={`${handleDirection()} ${color} flex w-full h-full md:h-screen relative items-center justify-center`}
         >
             {children}
         </section>

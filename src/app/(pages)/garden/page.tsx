@@ -10,11 +10,12 @@ import garden_water from '@/app/assets/images/garden/garden-water-flower.jpg';
 import grass from '@/app/assets/images/garden/grass.png';
 import butterfly_flying_animation from '@/app/assets/animations/yellow-butterfly-animation.json';
 import flower_butterfly_animation from '@/app/assets/animations/flower-butterfly-animation.json';
+import ImageSection from '@/app/components/ImageSection';
 
 export default function Garden() {
     return (
         <main className={'h-full'}>
-            <ColorSection direction={'row'}>
+            <ColorSection direction={'col-reverse'}>
                 <div className={'flex relative items-center justify-center w-full h-full bg-white'}>
                     <div className={'max-w-[500px] flex flex-col items-center justify-center space-y-5'}>
                         <TitleFontText className={'self-start text-3xl'}>Über mich</TitleFontText>
@@ -33,14 +34,7 @@ export default function Garden() {
                         <Animation animationData={butterfly_flying_animation} loop={true} />
                     </div>
                 </div>
-                <div className={'w-full h-full bg-pastel-green flex items-center justify-center'}>
-                    <Image
-                        placeholder={'blur'}
-                        className={'rounded-xl ring-2 ring-black w-[400px] 2xl:w-[500px]'}
-                        src={garden_butterfly}
-                        alt={'garden'}
-                    />
-                </div>
+                <ImageSection isStartOfPage={true} color={'bg-pastel-green'} src={garden_butterfly} alt={'garden'} />
             </ColorSection>
 
             <ColorSection direction={'row'} color={'bg-pastel-beige'}>
