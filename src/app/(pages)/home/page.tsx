@@ -15,14 +15,13 @@ import PinkButterfly from '@/app/components/details/PinkButterfly';
 export default function Home() {
     return (
         <main>
-            <ColorSection direction={'row'}>
-                <ImageSection
-                    isStartOfPage={true}
-                    color={'bg-pastel-beige'}
-                    src={profilePicStock}
-                    alt={'close up from woman'}
-                />
-                <div className={'w-full h-full flex flex-col items-center justify-center py-5 md:py-0 px-5 sm:px-0'}>
+            <ColorSection direction={'col-reverse'}>
+                <ImageSection color={'bg-pastel-beige'} src={profilePicStock} alt={'close up from woman'} />
+                <div
+                    className={
+                        'mt-[56px] lg:mt-0 w-full h-full flex flex-col items-center justify-center py-5 md:py-0 px-5 sm:px-0'
+                    }
+                >
                     <div className={'space-y-5 flex flex-col items-center justify-center max-w-[500px]'}>
                         <TitleFontText className={'self-start text-3xl'}>Über mich</TitleFontText>
                         <FontText>

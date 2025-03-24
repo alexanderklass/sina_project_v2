@@ -45,7 +45,7 @@ export default function Header() {
             </div>
 
             <div
-                className={`py-2 lg:py-0 px-10 lg:px-0 transition-all duration-300 flex flex-col items-start xl:items-baseline space-y-3 xl:space-y-0 lg:flex-row md:space-x-10`}
+                className={`py-2 lg:py-0 px-10 lg:px-0 transition-all duration-300 flex flex-col items-center xl:items-baseline space-y-3 xl:space-y-0 lg:flex-row md:space-x-10`}
             >
                 <NavButton href={'/home'}>Startseite</NavButton>
                 <NavButton href={'/rooms'}>Räumlichkeiten</NavButton>

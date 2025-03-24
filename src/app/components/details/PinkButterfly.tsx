@@ -6,7 +6,7 @@ export default function PinkButterfly() {
     return (
         <Image
             placeholder={'blur'}
-            className={'absolute  right-6 bottom-[44%] md:left-10 md:bottom-10 w-[50px] md:w-[150px] 2xl:w-[200px]'}
+            className={'absolute  right-6 bottom-[44%] md:right-10 md:bottom-10 w-[50px] md:w-[150px] 2xl:w-[200px]'}
             src={butterflyPink}
             alt={'pink butterfly'}
         />

@@ -14,7 +14,7 @@ export default function ColorSection({ children, direction, color, ...props }: C
             case 'row':
                 return 'flex-col lg:flex-row';
             case 'col-reverse':
-                return 'flex-col-reverse xl:flex-row';
+                return 'flex-col-reverse lg:flex-row';
         }
     };
     return (
