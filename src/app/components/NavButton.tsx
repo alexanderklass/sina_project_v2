@@ -2,6 +2,7 @@
 import { Josefin_Sans } from 'next/font/google';
 import React from 'react';
 import { useRouter, usePathname } from 'next/navigation';
+import FontText from '@/app/components/FontText';
 
 export interface NavButtonProps {
     children: React.ReactNode;
@@ -34,7 +35,7 @@ export default function NavButton({ children, href }: NavButtonProps) {
             onClick={handleNavButtonClick}
             className={`${josefin_sans.className} group relative font-bold cursor-pointer`}
         >
-            {children}
+            <FontText className={'text-2xl lg:text-base'}>{children}</FontText>
 
             <div
                 className={`${pathname === href ? 'w-full' : ''} w-0 absolute transition-all duration-300 h-1 group-hover:w-full rounded-full bg-black`}

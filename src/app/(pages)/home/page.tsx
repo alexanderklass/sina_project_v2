@@ -16,7 +16,12 @@ export default function Home() {
     return (
         <main>
             <ColorSection direction={'col-reverse'}>
-                <ImageSection color={'bg-pastel-beige'} src={profilePicStock} alt={'close up from woman'} />
+                <ImageSection
+                    vertical={true}
+                    color={'bg-pastel-beige'}
+                    src={profilePicStock}
+                    alt={'close up from woman'}
+                />
                 <div
                     className={
                         'mt-[56px] lg:mt-0 w-full h-full flex flex-col items-center justify-center py-5 md:py-0 px-5 sm:px-0'
@@ -51,12 +56,12 @@ export default function Home() {
                     veritatis vero! Molestiae quae soluta tempora! Culpa cum dolor dolorem et facilis ipsa itaque magnam
                     natus soluta ut!
                 </TextSection>
-                <ImageSection src={penStock} alt={'kid hand writing a picute'} />
+                <ImageSection vertical={false} src={penStock} alt={'kid hand writing a picute'} />
                 <GreenButterfly />
             </ColorSection>
 
             <ColorSection direction={'row'} color={'bg-pastel-beige'}>
-                <ImageSection src={penStock} alt={'kid hand writing a picute'} />
+                <ImageSection vertical={false} src={penStock} alt={'kid hand writing a picute'} />
                 <TextSection title={'Über mich'}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aperiam aspernatur ducimus ea
                     enim esse eum illo illum inventore modi, mollitia nemo neque officia possimus quas tempora ut

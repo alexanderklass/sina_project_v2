@@ -18,7 +18,7 @@ export default function Header() {
     return (
         <nav
             id={'header'}
-            className={`z-10 w-full ${isOpen && isFocused ? 'h-[250px] lg:h-auto' : 'h-[56px] md:h-[70px] lg:h-auto'} fixed top-0 lg:static bg-white duration-300 shadow-md transition-all overflow-hidden lg:items-center lg:justify-between flex flex-col lg:flex-row md:py-2 xl:py-7 xl:p-5 md:px-20`}
+            className={`z-10 w-full ${isOpen && isFocused ? 'h-full lg:h-auto' : 'h-[56px] md:h-[70px] lg:h-auto'} fixed top-0 lg:static bg-white duration-300  border-b border-gray-300 shadow-md lg:shadow-none transition-all overflow-hidden lg:items-center lg:justify-between flex flex-col lg:flex-row md:py-2 xl:py-7 xl:p-5 md:px-20`}
         >
             <div className={'flex flex-row items-center justify-around md:justify-between w-full 2xl:w-auto'}>
                 <div className={'flex md:w-auto flex-row items-center justify-center'}>
@@ -45,7 +45,7 @@ export default function Header() {
             </div>
 
             <div
-                className={`py-2 lg:py-0 px-10 lg:px-0 transition-all duration-300 flex flex-col items-center xl:items-baseline space-y-3 xl:space-y-0 lg:flex-row md:space-x-10`}
+                className={`py-2 lg:py-0 px-10 ${isOpen && isFocused ? 'h-full justify-center flex' : 'hidden'} lg:px-0 transition-all duration-300 lg:flex flex-col items-center xl:items-baseline space-y-3 lg:space-y-0 lg:flex-row md:space-x-10`}
             >
                 <NavButton href={'/home'}>Startseite</NavButton>
                 <NavButton href={'/rooms'}>Räumlichkeiten</NavButton>

@@ -9,10 +9,14 @@ const Map = dynamic(() => import('@/app/components/map/MyMap'), { ssr: false });
 
 export default function Footer() {
     return (
-        <footer className={'bg-white flex flex-col xl:flex-row relative w-full p-5 items-center justify-center'}>
-            <div className={`w-full flex items-center space-y-5 justify-center flex-col`}>
+        <footer
+            className={
+                'bg-white flex space-y-5 xl: flex-col lg:flex-row relative w-full p-5 items-center justify-center'
+            }
+        >
+            <div className={`w-full z-10 flex items-center space-y-5 justify-center flex-col`}>
                 <TitleFontText className={'text-2xl'}>Impressum</TitleFontText>
-                <FontText className={'w-auto'}>
+                <FontText className={'lg:w-[350px] w-auto'}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut blanditiis consectetur
                     eveniet, ex incidunt iste, libero maiores neque nesciunt, repellat similique suscipit totam! Aut
                     enim ex expedita omnis quos.

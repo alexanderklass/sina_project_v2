@@ -13,11 +13,11 @@ interface TextGridProps {
 export default function TextSection({ title, children, extraChildren, isStartOfPage, color }: TextGridProps) {
     return (
         <div
-            className={`${isStartOfPage && 'mt-[56px] lg:mt-0'} ${color} w-full h-full flex items-center justify-center py-5 md:py-0 px-5 sm:px-0`}
+            className={`${isStartOfPage && 'mt-[56px] lg:mt-0'} ${color} w-full h-full flex items-center justify-center py-5 lg:py-0 px-5 xl:px-0`}
         >
             <div className={'max-w-[500px] flex flex-col items-center justify-center space-y-5'}>
-                <TitleFontText className={'self-start text-3xl'}>{title}</TitleFontText>
-                <FontText>{children}</FontText>
+                <TitleFontText className={'self-start text-3xl 2xl:text-4xl'}>{title}</TitleFontText>
+                <FontText className={'text-base 2xl:text-xl'}>{children}</FontText>
             </div>
             {extraChildren}
         </div>

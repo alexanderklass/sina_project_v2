@@ -20,11 +20,17 @@ export default function Garden() {
                     natus soluta ut!
                 </TextSection>
                 <GrassWithButterfly />
-                <ImageSection isStartOfPage={true} color={'bg-pastel-green'} src={garden_butterfly} alt={'garden'} />
+                <ImageSection
+                    vertical={true}
+                    isStartOfPage={true}
+                    color={'bg-pastel-green'}
+                    src={garden_butterfly}
+                    alt={'garden'}
+                />
             </ColorSection>
 
             <ColorSection direction={'row'} color={'bg-pastel-beige'}>
-                <ImageSection src={garden_flower} alt={'garden flower'} />
+                <ImageSection vertical={false} src={garden_flower} alt={'garden flower'} />
                 <TextSection title={'Über mich'}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aperiam aspernatur ducimus ea
                     enim esse eum illo illum inventore modi, mollitia nemo neque officia possimus quas tempora ut
@@ -43,7 +49,7 @@ export default function Garden() {
                     veritatis vero! Molestiae quae soluta tempora! Culpa cum dolor dolorem et facilis ipsa itaque magnam
                     natus soluta ut!
                 </TextSection>
-                <ImageSection src={garden_water} alt={'Garden Flower'} />
+                <ImageSection vertical={false} src={garden_water} alt={'Garden Flower'} />
             </ColorSection>
         </main>
     );
