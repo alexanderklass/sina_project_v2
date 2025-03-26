@@ -24,7 +24,7 @@ export default function Header() {
     return (
         <nav
             id={'header'}
-            className={`z-10 w-full ${isOpen && isFocused ? 'h-full lg:h-auto' : 'h-[56px] md:h-[70px] lg:h-auto'} fixed top-0 lg:static bg-white duration-300  border-b border-gray-300 shadow-md lg:shadow-none transition-all overflow-hidden lg:items-center lg:justify-between flex flex-col lg:flex-row md:py-2 xl:py-7 xl:p-5 md:px-20`}
+            className={`z-10 w-full ${isOpen && isFocused ? 'h-full lg:h-auto' : 'h-[56px] md:h-[70px] lg:h-auto'} fixed top-0 lg:static bg-white duration-300  border-b border-gray-300 shadow-md lg:shadow-none transition-all overflow-hidden lg:items-center lg:justify-between flex flex-col lg:flex-row md:py-2 xl:py-2 xl:p-5 md:px-20`}
         >
             <div className={'flex flex-row items-center justify-around md:justify-between w-full 2xl:w-auto'}>
                 <div className={'flex md:w-auto flex-row items-center justify-center'}>

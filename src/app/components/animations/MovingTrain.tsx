@@ -9,7 +9,7 @@ export default function MovingTrain() {
             initial={{ x: '-100%' }}
             animate={{ x: '80vw' }}
             transition={{ duration: 15, ease: 'linear' }}
-            className={'absolute left-0 bottom-[39%] md:-bottom-10 2xl:-bottom-16 w-12 md:w-52 2xl:w-80'}
+            className={'absolute left-0 bottom-[0%] md:-bottom-10 2xl:-bottom-16 w-12 md:w-52 2xl:w-80'}
         >
             <Animation animationData={toy_animation} />
         </motion.div>

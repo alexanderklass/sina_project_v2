@@ -28,8 +28,8 @@ export default function Home() {
                     }
                 >
                     <div className={'space-y-5 flex flex-col items-center justify-center max-w-[500px]'}>
-                        <TitleFontText className={'self-start text-3xl'}>Über mich</TitleFontText>
-                        <FontText>
+                        <TitleFontText className={'self-start text-3xl 2xl:text-4xl'}>Über mich</TitleFontText>
+                        <FontText className={'text-base 2xl:text-xl'}>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aperiam aspernatur
                             ducimus ea enim esse eum illo illum inventore modi, mollitia nemo neque officia possimus
                             quas tempora ut voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
@@ -42,7 +42,10 @@ export default function Home() {
                                 'self-start ring-2 cursor-pointer rounded-xl bg-white  ring-black p-2 hover:bg-black hover:text-white duration-300'
                             }
                         >
-                            <FontText>Anfragen unter 0123/45678910</FontText>
+                            <FontText className={'hidden md:flex text-base 2xl:text-xl'}>
+                                Anfragen unter 0123/45678910
+                            </FontText>
+                            <FontText className={'md:hidden flex text-base 2xl:text-xl'}>Direkt anfragen</FontText>
                         </button>
                     </div>
                 </div>
