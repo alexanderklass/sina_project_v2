@@ -2,7 +2,6 @@
 import { Josefin_Sans } from 'next/font/google';
 import { useRouter, usePathname } from 'next/navigation';
 import React from 'react';
-import Link from 'next/link';
 import FontText from '@/app/components/FontText';
 
 export interface NavButtonProps {
@@ -32,8 +31,7 @@ export default function NavButton({ children, href }: NavButtonProps) {
         handleRouteChange();
     };
     return (
-        <Link
-            href={href}
+        <button
             onClick={handleNavButtonClick}
             className={`${josefin_sans.className} group relative font-bold cursor-pointer`}
         >
@@ -42,6 +40,6 @@ export default function NavButton({ children, href }: NavButtonProps) {
             <div
                 className={`${pathname === href ? 'w-full' : ''} w-0 absolute transition-all duration-300 h-1 group-hover:w-full rounded-full bg-black`}
             ></div>
-        </Link>
+        </button>
     );
 }
