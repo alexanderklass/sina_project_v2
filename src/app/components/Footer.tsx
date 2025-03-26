@@ -11,7 +11,7 @@ export default function Footer() {
     return (
         <footer
             className={
-                'bg-white flex space-y-5 xl: flex-col lg:flex-row relative w-full p-5 items-center justify-center'
+                'bg-white flex -z-0 space-y-5 flex-col lg:flex-row relative w-full p-5 items-center justify-center'
             }
         >
             <div className={`w-full z-10 flex items-center space-y-5 justify-center flex-col`}>
