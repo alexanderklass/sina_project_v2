@@ -6,6 +6,7 @@
     --pastel-beige: #f5efe7;
     --pastel-pink: #ce8da1;
     --pastel-yellow: #fbf0b0;
+    --pastel-blue: #afd5f0;
 }
 
 .bg-pastel-green {
@@ -22,4 +23,8 @@
 
 .bg-pastel-pink {
     background-color: var(--pastel-pink);
+}
+
+.bg-pastel-blue {
+    background-color: var(--pastel-blue);
 }

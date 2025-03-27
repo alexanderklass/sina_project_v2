@@ -11,6 +11,7 @@ import TextSection from '@/app/components/TextSection';
 import ImageSection from '@/app/components/ImageSection';
 import GreenButterfly from '@/app/components/details/GreenButterfly';
 import PinkButterfly from '@/app/components/details/PinkButterfly';
+import GreenGrass from '@/app/components/details/GreenGrass';
 
 export default function Home() {
     return (
@@ -49,6 +50,7 @@ export default function Home() {
                         </button>
                     </div>
                 </div>
+                <GreenGrass />
             </ColorSection>
 
             <ColorSection direction={'col-reverse'} color={'bg-pastel-green'}>
