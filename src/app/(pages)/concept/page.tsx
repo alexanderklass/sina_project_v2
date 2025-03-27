@@ -1,6 +1,7 @@
 import React from 'react';
 import ColorSection from '@/app/components/ColorSection';
 import TextSection from '@/app/components/TextSection';
+import ExtraInfo from '@/app/components/ExtraInfo';
 
 export default function Concept() {
     return (
@@ -17,6 +18,8 @@ export default function Concept() {
                     vel voluptatibus! Eos, eum, voluptate!
                 </TextSection>
             </ColorSection>
+
+            <ExtraInfo />
         </main>
     );
 }

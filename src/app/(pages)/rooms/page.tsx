@@ -9,11 +9,11 @@ import playRoom1 from '@/app/assets/images/rooms/play-room-1.jpg';
 import playRoom2 from '@/app/assets/images/rooms/play-room-2.jpg';
 
 export default function Rooms() {
-    const list = [playRoom2, playRoom1];
+    const list = [playRoom2, playRoom1, playRoom2, playRoom1];
 
     return (
         <main className={'h-full'}>
-            <div className={'bg-pastel-beige h-full'}>
+            <div className={'mt-[80px] lg:mt-0'}>
                 <ImageSlider imageList={list} />
             </div>
             <ColorSection direction={'row'}>
