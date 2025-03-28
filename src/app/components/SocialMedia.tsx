@@ -7,10 +7,10 @@ export default function SocialMedia() {
     return (
         <div className={'flex flex-row items-center mb-5 lg:mb-0 justify-center'}>
             <Link href={'#'} className={'cursor-pointer'}>
-                <FaSquareFacebook className={'lg:w-[30.5px] lg:h-[30.5px] w-[50px] h-[50px]'} />
+                <FaSquareFacebook className={'lg:w-[30.5px] lg:h-[30.5px] w-[40px] h-[40px]'} />
             </Link>
             <Link href={'#'} className={'cursor-pointer'}>
-                <AiFillTikTok className={'lg:w-[35px] lg:h-[35px] w-[55px] h-[55px]'} />
+                <AiFillTikTok className={'lg:w-[35px] lg:h-[35px] w-[45px] h-[45px]'} />
             </Link>
         </div>
     );

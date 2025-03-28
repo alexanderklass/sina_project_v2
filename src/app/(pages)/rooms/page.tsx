@@ -20,12 +20,11 @@ export default function Rooms() {
                 <div className={'w-full h-full hidden lg:flex items-center justify-center bg-pastel-beige'}>
                     <Collage />
                 </div>
-                <TextSection color={'bg-pastel-pink'} title={'Über mich'}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aperiam aspernatur ducimus ea
-                    enim esse eum illo illum inventore modi, mollitia nemo neque officia possimus quas tempora ut
-                    voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolore expedita quas
-                    veritatis vero! Molestiae quae soluta tempora! Culpa cum dolor dolorem et facilis ipsa itaque magnam
-                    natus soluta ut!
+                <TextSection color={'bg-pastel-pink'} title={'Ein Ort zum Wohlfühlen'}>
+                    Unsere Kindertagespflege bietet helle, freundliche Räume, in denen sich Kinder geborgen fühlen. Eine
+                    liebevolle Spielecke, altersgerechte Materialien und kreative Bereiche laden zum Entdecken, Spielen
+                    und Lernen ein. Hier finden die Kleinen Raum für Bewegung, Fantasie und ruhige Momente – in einer
+                    Umgebung voller Sicherheit und Geborgenheit.
                 </TextSection>
                 <MovingTrain />
             </ColorSection>

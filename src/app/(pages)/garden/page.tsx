@@ -12,12 +12,9 @@ export default function Garden() {
     return (
         <main className={'h-full'}>
             <ColorSection direction={'col-reverse'}>
-                <TextSection color={'bg-white'} title={'Über mich'}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aperiam aspernatur ducimus ea
-                    enim esse eum illo illum inventore modi, mollitia nemo neque officia possimusnm quas tempora ut
-                    voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolore expedita quas
-                    veritatis vero! Molestiae quae soluta tempora! Culpa cum dolor dolorem et facilis ipsa itaque magnam
-                    natus soluta ut!
+                <TextSection color={'bg-white'} title={'Abenteuer und Entdeckungen'}>
+                    Der Garten der Kindertagespflege bietet den Kindern eine vielfältige und spannende Umgebung, in der
+                    sie sich frei entfalten können.
                 </TextSection>
                 <GrassWithButterfly />
                 <ImageSection
@@ -31,23 +28,19 @@ export default function Garden() {
 
             <ColorSection direction={'row'} color={'bg-pastel-beige'}>
                 <ImageSection vertical={false} src={garden_flower} alt={'garden flower'} />
-                <TextSection title={'Über mich'}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aperiam aspernatur ducimus ea
-                    enim esse eum illo illum inventore modi, mollitia nemo neque officia possimus quas tempora ut
-                    voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolore expedita quas
-                    veritatis vero! Molestiae quae soluta tempora! Culpa cum dolor dolorem et facilis ipsa itaque magnam
-                    natus soluta ut!
+                <TextSection title={'Spiel und Spaß'}>
+                    Über die Terrasse gelangen wir direkt in den Garten, der mit zahlreichen Spielangeboten und
+                    ausreichend Platz zum Toben, Spielen und Entdecken gestaltet ist. Ein Sandkasten lädt die Kinder zum
+                    Buddeln und kreativen Bauen ein, während die Matschküche besonders an warmen Tagen für viel Spaß und
+                    Abenteuer sorgt.
                 </TextSection>
                 <ButterflyWithFlowers />
             </ColorSection>
 
             <ColorSection direction={'col-reverse'} color={'bg-[#F0DBC5]'}>
-                <TextSection title={'Über mich'}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aperiam aspernatur ducimus ea
-                    enim esse eum illo illum inventore modi, mollitia nemo neque officia possimus quas tempora ut
-                    voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolore expedita quas
-                    veritatis vero! Molestiae quae soluta tempora! Culpa cum dolor dolorem et facilis ipsa itaque magnam
-                    natus soluta ut!
+                <TextSection title={'Bewegung für kleine Entdecker'}>
+                    Eine Rutsche sowie weitere altersgerechte Spielgeräte bieten zusätzliche Bewegungsmöglichkeiten und
+                    fördern die motorische Entwicklung der Kinder.
                 </TextSection>
                 <ImageSection vertical={false} src={garden_water} alt={'Garden Flower'} />
             </ColorSection>

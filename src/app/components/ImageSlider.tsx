@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { MdArrowLeft } from 'react-icons/md';
+import SlideInAnimation from '@/app/components/SlideInAnimation';
 
 interface ImageSliderProps {
     imageList: any;
@@ -44,17 +45,19 @@ export default function ImageSlider({ imageList }: ImageSliderProps) {
         prevArrow: <CustomPrevArrow />,
     };
     return (
-        <div className={'block rounded-lg lg:hidden px-3 relative'}>
-            <Slider className={'mb-5 rounded-lg'} {...settings}>
-                {imageList.map((image: any, index: number) => (
-                    <Image
-                        className={'w-full relative ring-1 ring-black rounded-lg'}
-                        key={index}
-                        src={image}
-                        alt={'picture'}
-                    />
-                ))}
-            </Slider>
-        </div>
+        <SlideInAnimation>
+            <div className={'block rounded-lg lg:hidden px-3 relative'}>
+                <Slider className={'mb-5 rounded-lg'} {...settings}>
+                    {imageList.map((image: any, index: number) => (
+                        <Image
+                            className={'w-full relative ring-1 ring-black rounded-lg'}
+                            key={index}
+                            src={image}
+                            alt={'picture'}
+                        />
+                    ))}
+                </Slider>
+            </div>
+        </SlideInAnimation>
     );
 }
