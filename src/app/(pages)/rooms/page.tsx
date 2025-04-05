@@ -1,33 +1,45 @@
 'use client';
 import React from 'react';
-import ColorSection from '@/app/components/ColorSection';
-import Collage from '@/app/components/Collage';
-import TextSection from '@/app/components/TextSection';
-import MovingTrain from '@/app/components/animations/MovingTrain';
-import ImageSlider from '@/app/components/ImageSlider';
-import playRoom1 from '@/app/assets/images/rooms/play-room-1.jpg';
-import playRoom2 from '@/app/assets/images/rooms/play-room-2.jpg';
+import TopPanel from '@/app/components/TopPanel';
+import Tabs from '@/app/components/Tabs';
+import { impressions } from '@/app/constants/rooms';
+import Image from 'next/image';
+import TitleFontText from '@/app/components/TitleFontText';
 
 export default function Rooms() {
-    const list = [playRoom2, playRoom1, playRoom2, playRoom1];
-
     return (
-        <main className={'h-full'}>
-            <div className={'mt-[80px] lg:mt-0'}>
-                <ImageSlider imageList={list} />
-            </div>
-            <ColorSection direction={'row'}>
-                <div className={'w-full h-full hidden lg:flex items-center justify-center bg-pastel-beige'}>
-                    <Collage />
+        <main className={'h-full w-full'}>
+            <TopPanel
+                title={'Unsere Räumlichkeiten'}
+                text={
+                    'Entdecken Sie die liebevoll gestalteten Räume, in denen unsere Kinder spielen, lernen und wachsen.'
+                }
+            />
+
+            <section className={'bg-pastel-beige w-full py-20 flex items-center justify-center'}>
+                <Tabs />
+            </section>
+            <section
+                className={
+                    'flex flex-col items-center gap-y-10 py-20 xl:w-[1200px] px-5 xl:px-0 justify-center mx-auto'
+                }
+            >
+                <div>
+                    <TitleFontText className={'text-[#5a8f7b] text-3xl'}>Impressionen</TitleFontText>
                 </div>
-                <TextSection color={'bg-pastel-pink'} title={'Ein Ort zum Wohlfühlen'}>
-                    Unsere Kindertagespflege bietet helle, freundliche Räume, in denen sich Kinder geborgen fühlen. Eine
-                    liebevolle Spielecke, altersgerechte Materialien und kreative Bereiche laden zum Entdecken, Spielen
-                    und Lernen ein. Hier finden die Kleinen Raum für Bewegung, Fantasie und ruhige Momente – in einer
-                    Umgebung voller Sicherheit und Geborgenheit.
-                </TextSection>
-                <MovingTrain />
-            </ColorSection>
+                <div className={'grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 grid'}>
+                    {impressions.map((impression, index) => (
+                        <div
+                            className={
+                                'overflow-hidden relative rounded-lg transition-all shadow-md hover:shadow-lg w-full h-fit'
+                            }
+                            key={index}
+                        >
+                            <Image className={'object-cover'} src={impression} alt={`Room${index}`} />
+                        </div>
+                    ))}
+                </div>
+            </section>
         </main>
     );
 }

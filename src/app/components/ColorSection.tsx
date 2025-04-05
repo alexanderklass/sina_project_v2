@@ -5,9 +5,10 @@ export interface ColorSectionProps {
     children?: React.ReactNode;
     direction: 'col' | 'row' | 'col-reverse';
     color?: string;
+    isStartOfPage?: boolean;
 }
 
-export default function ColorSection({ children, direction, color, ...props }: ColorSectionProps) {
+export default function ColorSection({ children, direction, color, isStartOfPage, ...props }: ColorSectionProps) {
     const handleDirection = () => {
         switch (direction) {
             case 'col':
@@ -22,7 +23,7 @@ export default function ColorSection({ children, direction, color, ...props }: C
         <SlideInAnimation>
             <section
                 {...props}
-                className={`${handleDirection()} ${color} flex w-full h-full md:h-screen relative items-center justify-center`}
+                className={`${handleDirection()} ${color} ${isStartOfPage && 'mt-[64px] lg:mt-0'} flex w-full h-full md:h-screen relative items-center justify-center`}
             >
                 {children}
             </section>

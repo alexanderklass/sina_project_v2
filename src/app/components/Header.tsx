@@ -25,29 +25,35 @@ export default function Header() {
 
     return (
         <nav
-            className={`z-20 w-full ${isOpen && isFocused ? 'h-full lg:h-auto' : 'h-[56px] md:h-[70px] lg:h-auto'} fixed top-0 lg:static bg-white duration-300  border-b border-gray-300 shadow-md lg:shadow-none transition-all overflow-hidden lg:items-center lg:justify-between flex flex-col lg:flex-row md:py-2 xl:py-2 xl:p-5 md:px-5`}
+            className={`z-20 w-full ${isOpen && isFocused ? 'h-full lg:h-auto' : 'h-[48px] lg:h-auto'} fixed top-0 lg:stick  duration-300 bg-[#FFF8F0]/95 backdrop-blur supports-[backdrop-filter]:bg-[#FFF8F0]/80 border-b border-gray-300  transition-all overflow-hidden lg:items-center lg:justify-center flex flex-col lg:flex-row md:py-2 xl:py-2 xl:p-5 md:px-5`}
         >
-            <div className={'flex flex-row items-center justify-around md:justify-between w-full lg:w-auto'}>
-                <Logo />
-                <BurgerMenuButton
-                    handleClick={handleBurgerMenu}
-                    handleBlur={handleBlur}
-                    handleFocus={handleFocus}
-                    isOpen={isOpen}
-                    isFocused={isFocused}
-                />
-            </div>
+            <div className={'flex flex-col h-full lg:flex-row items-center justify-between lg:w-[1400px]'}>
+                <div
+                    className={
+                        'flex flex-row items-center justify-center gap-x-5 lg:gap-x-0 md:justify-between w-full lg:w-auto'
+                    }
+                >
+                    <Logo />
+                    <BurgerMenuButton
+                        handleClick={handleBurgerMenu}
+                        handleBlur={handleBlur}
+                        handleFocus={handleFocus}
+                        isOpen={isOpen}
+                        isFocused={isFocused}
+                    />
+                </div>
 
-            <div
-                className={`py-2 lg:py-0 px-10 ${isOpen && isFocused ? 'h-full justify-center flex' : 'hidden'} z-20 lg:px-0 transition-all duration-300 lg:flex flex-col items-center xl:items-baseline space-y-3 lg:space-y-0 lg:flex-row lg:space-x-10`}
-            >
-                <NavButton href={'/home'}>Start</NavButton>
-                <NavButton href={'/rooms'}>Räumlichkeiten</NavButton>
-                <NavButton href={'/garden'}>Garten</NavButton>
-                <NavButton href={'/concept'}>Konzeption</NavButton>
-                <NavButton href={'/impressum'}>Impressum</NavButton>
+                <div
+                    className={`py-2 lg:py-0 px-10 ${isOpen && isFocused ? 'h-full justify-center flex' : 'hidden'} z-20 lg:px-0 transition-all duration-300 lg:flex flex-col items-center xl:items-baseline space-y-3 lg:space-y-0 lg:flex-row lg:space-x-5`}
+                >
+                    <NavButton href={'/home'}>Start</NavButton>
+                    <NavButton href={'/rooms'}>Räumlichkeiten</NavButton>
+                    <NavButton href={'/garden'}>Garten</NavButton>
+                    <NavButton href={'/concept'}>Konzeption</NavButton>
+                    <NavButton href={'/impressum'}>Impressum</NavButton>
+                </div>
+                <SocialMedia />
             </div>
-            <SocialMedia />
         </nav>
     );
 }

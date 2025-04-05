@@ -26,14 +26,13 @@ export default function NavButton({ children, href }: NavButtonProps) {
     return (
         <>
             {href === '/impressum' ? (
-                // Bei einem speziellen Fall wie "/impressum", führe ein Scroll-Event aus.
                 <button
                     onClick={handleScrollToBottom}
                     className={`${josefin_sans.className} group relative font-bold cursor-pointer`}
                 >
-                    <FontText className={'text-2xl lg:text-base'}>{children}</FontText>
+                    <FontText className={'text-2xl text-gray-600 lg:text-[14px]'}>{children}</FontText>
                     <div
-                        className={`${isActive ? 'w-full' : ''} w-0 absolute transition-all duration-300 h-1 group-hover:w-full rounded-full bg-black`}
+                        className={`${isActive ? 'w-full' : ''} w-0 absolute transition-all duration-300 h-0.5 group-hover:w-full rounded-full bg-gray-600`}
                     ></div>
                 </button>
             ) : (
@@ -41,9 +40,9 @@ export default function NavButton({ children, href }: NavButtonProps) {
                     href={href || '#'}
                     className={`${josefin_sans.className} group relative font-bold cursor-pointer`}
                 >
-                    <FontText className={'text-2xl lg:text-base'}>{children}</FontText>
+                    <FontText className={'text-2xl text-gray-600 lg:text-[14px]'}>{children}</FontText>
                     <div
-                        className={`${isActive ? 'w-full' : ''} w-0 absolute transition-all duration-300 h-1 group-hover:w-full rounded-full bg-black`}
+                        className={`${isActive ? 'w-full' : ''} w-0 absolute transition-all duration-300 h-0.5 group-hover:w-full rounded-full bg-gray-600`}
                     ></div>
                 </Link>
             )}

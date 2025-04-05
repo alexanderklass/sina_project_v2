@@ -7,7 +7,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="de">
-            <body className={`antialiased overflow-x-hidden`}>{children}</body>
+            <body className={`antialiased overflow-x-hidden flex-1`}>{children}</body>
         </html>
     );
 }
