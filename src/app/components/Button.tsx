@@ -16,7 +16,7 @@ export default function Button({ text, href, className, icon, newTab, ...props }
             {...props}
             target={newTab ? '_blank' : '_self'}
             href={href || '#'}
-            className={`${className} ${icon && 'gap-x-2'} flex flex-row items-center justify-center cursor-pointer transition-all rounded-md px-4 py-2`}
+            className={`${className} ${icon && 'gap-x-2'} flex flex-row items-center justify-center cursor-pointer transition-all rounded-md sm:px-4 px-1 py-1 sm:py-2`}
         >
             {icon}
             <FontText>{text}</FontText>
