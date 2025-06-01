@@ -3,7 +3,7 @@ import TopPanel from '@/app/components/TopPanel';
 import FontText from '@/app/components/FontText';
 import Image from 'next/image';
 import IconSubText from '@/app/components/IconSubText';
-import room1 from '@/app/assets/images/rooms/play-room-1.jpg';
+import welcome from '@/app/assets/images/rooms/welcome-schild.jpg';
 import { LuHeart } from 'react-icons/lu';
 import { LuBrain } from 'react-icons/lu';
 import { LuUsersRound } from 'react-icons/lu';
@@ -65,7 +65,7 @@ export default function Concept() {
                             'xl:w-[500px] xl:h-[400px] w-full h-[200px] self-start overflow-hidden rounded-xl shadow-md relative'
                         }
                     >
-                        <Image src={room1} className={'object-cover'} fill alt={'concept'} />
+                        <Image src={welcome} className={'object-cover'} fill alt={'concept'} />
                     </div>
                 </div>
             </section>

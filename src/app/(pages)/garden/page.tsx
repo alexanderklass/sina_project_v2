@@ -1,12 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
 import TopPanel from '@/app/components/TopPanel';
-import panorama from '@/app/assets/images/garden/garden-flower-pot.jpg';
+
+import gardenShowcase from '@/app/assets/images/garden/garden-showcase.jpg';
+import zwerge from '@/app/assets/images/garden/zwerge.jpg';
+import sandkasten_closeup from '@/app/assets/images/garden/sandkasten-closeup.jpg';
+import matschkueche from '@/app/assets/images/garden/matschkueche.jpg';
+import hochbeet from '@/app/assets/images/garden/hochbeet.jpg';
+import schlachfecke from '@/app/assets/images/garden/schlafecke.jpg';
+import lastenrad from '@/app/assets/images/garden/lastenrad.jpg';
+
 import FontText from '@/app/components/FontText';
 import { LuSunMedium } from 'react-icons/lu';
 import { LuLeaf } from 'react-icons/lu';
 import { LuDroplets } from 'react-icons/lu';
-import { LuCloud } from 'react-icons/lu';
+import { LuCloud } from 'react-icons/lu'
 import { GiButterfly } from 'react-icons/gi';
 import TitleFontText from '@/app/components/TitleFontText';
 import Card from '@/app/components/Card';
@@ -24,10 +32,10 @@ export default function Garden() {
                         'relative overflow-hidden rounded-xl shadow-xl w-full xl:w-[1400px] xl:h-[500px] h-[300px] mx-auto'
                     }
                 >
-                    <Image src={panorama} alt={'Garden'} layout="fill" objectFit="cover" />
+                    <Image src={gardenShowcase} alt={'Garden'} layout="fill" objectFit="cover" />
                 </div>
 
-                <div className={'flex flex-col xl:flex-row xl:w-[1000px] gap-y-10 xl:gap-y-0 gap-x-10 mt-20'}>
+                <div className={'flex flex-col xl:flex-row xl:w-[1400px] gap-y-10 xl:gap-y-0 gap-x-10 mt-20'}>
                     <div className={'flex flex-col space-y-8 text-gray-700 w-full'}>
                         <FontText className={'text-[#5a8f7b] text-3xl'}>Naturerfahrung für alle Sinne</FontText>
                         <FontText>
@@ -59,18 +67,24 @@ export default function Garden() {
                             </div>
                         </div>
                     </div>
-                    <div className={'grid grid-cols-2 gap-4 w-full items-center'}>
+                    <div className={'grid grid-cols-3 gap-4 w-full items-center'}>
                         <div className={'relative overflow-hidden rounded-xl shadow-xl w-full h-[200px]'}>
-                            <Image className={'object-cover'} fill src={panorama} alt={'garden'} />
+                            <Image className={'object-cover'} fill src={sandkasten_closeup} alt={'garden'} />
                         </div>
                         <div className={'relative overflow-hidden rounded-xl shadow-xl w-full h-[200px]'}>
-                            <Image className={'object-cover'} fill src={panorama} alt={'garden'} />
+                            <Image className={'object-cover'} fill src={zwerge} alt={'garden'} />
                         </div>
                         <div className={'relative overflow-hidden rounded-xl shadow-xl w-full h-[200px]'}>
-                            <Image className={'object-cover'} fill src={panorama} alt={'garden'} />
+                            <Image className={'object-cover'} fill src={hochbeet} alt={'garden'} />
                         </div>
                         <div className={'relative overflow-hidden rounded-xl shadow-xl w-full h-[200px]'}>
-                            <Image className={'object-cover'} fill src={panorama} alt={'garden'} />
+                            <Image className={'object-cover'} fill src={schlachfecke} alt={'garden'} />
+                        </div>
+                        <div className={'relative overflow-hidden rounded-xl shadow-xl w-full h-[200px]'}>
+                            <Image className={'object-cover'} fill src={matschkueche} alt={'garden'} />
+                        </div>
+                        <div className={'relative overflow-hidden rounded-xl shadow-xl w-full h-[200px]'}>
+                            <Image className={'object-cover'} fill src={lastenrad} alt={'garden'} />
                         </div>
                     </div>
                 </div>

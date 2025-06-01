@@ -15,7 +15,6 @@ export default function Rooms() {
                     'Entdecken Sie die liebevoll gestalteten Räume, in denen unsere Kinder spielen, lernen und wachsen.'
                 }
             />
-
             <section className={'bg-pastel-beige w-full py-20 flex items-center justify-center'}>
                 <Tabs />
             </section>

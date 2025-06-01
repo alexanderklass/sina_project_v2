@@ -7,7 +7,7 @@ import Image from 'next/image';
 import GreenGrass from '@/app/components/details/GreenGrass';
 import Button from '@/app/components/Button';
 import Card from '@/app/components/Card';
-import profilePicStock from '@/app/assets/images/home/woman-stock.jpg';
+import portraitImage from '@/app/assets/images/home/sina-portrait.jpg';
 import { IoLocationOutline } from 'react-icons/io5';
 import { PiFlowerLight } from 'react-icons/pi';
 import { IoMailOutline } from 'react-icons/io5';
@@ -53,7 +53,7 @@ export default function Home() {
                                 'xl:h-[500px] h-[400px] w-[300px] xl:w-[400px] ring-8 ring-white relative overflow-hidden rounded-xl shadow-2xl'
                             }
                         >
-                            <Image src={profilePicStock} className={'object-cover'} fill alt={'smiling women'} />
+                            <Image src={portraitImage} className={'object-cover'} loading='lazy' fill alt={'Sinas Schmetterlinge Portrait Foto'} />
                         </div>
                     </div>
                 </div>

@@ -2,6 +2,7 @@ import { tabs } from '@/app/constants/rooms';
 import TabsNavButton from '@/app/components/TabsNavButton';
 import { useState } from 'react';
 import TabsContent from '@/app/components/TabsContent';
+import { AnimatePresence } from 'framer-motion';
 
 export default function Tabs() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -18,16 +19,23 @@ export default function Tabs() {
                     />
                 ))}
             </section>
-            {tabs.map((tab, index) => (
-                <TabsContent
-                    image={tab.image}
-                    active={index === activeIndex}
-                    subTextArray={subItems[activeIndex]}
-                    mainText={tab.text}
-                    mainTextTitle={tab.titleText}
-                    key={index}
-                />
-            ))}
+            <section className={'flex flex-row w-full overflow-hidden'}>
+                <AnimatePresence mode={'wait'}>
+                    {tabs.map(
+                        (tab, index) =>
+                            index === activeIndex && (
+                                <TabsContent
+                                    image={tab.image}
+                                    active={index === activeIndex}
+                                    subTextArray={subItems[activeIndex]}
+                                    mainText={tab.text}
+                                    mainTextTitle={tab.titleText}
+                                    key={index}
+                                />
+                            ),
+                    )}
+                </AnimatePresence>
+            </section>
         </div>
     );
 }

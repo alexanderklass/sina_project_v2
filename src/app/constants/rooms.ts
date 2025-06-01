@@ -1,9 +1,24 @@
-import room1 from '@/app/assets/images/rooms/play-room-1.jpg';
-import room2 from '@/app/assets/images/rooms/play-room-2.jpg';
+import spielbereichShowcase from '@/app/assets/images/rooms/spielbereich-showcase.jpg';
+import spielbereichBodenLava from '@/app/assets/images/rooms/spielbereich-bodenlava.jpg';
+import spielbereichKletterwand from '@/app/assets/images/rooms/spielbereich-kletterwand.jpg';
+import spielbereichKletterwand2 from '@/app/assets/images/rooms/spielbereich-kletterwand-matte.jpg';
+import spielbereichStuhl from '@/app/assets/images/rooms/spielbereich-stuhl.jpg';
+import spielbereichKletterwand3 from '@/app/assets/images/rooms/spielbereich-kletterwand-rutsche.jpg';
+
+import garderobe from '@/app/assets/images/rooms/garderobe.jpg';
+import essbereichShowcase from '@/app/assets/images/rooms/essbereich-showcase.jpg';
+import essbereichKueche from '@/app/assets/images/rooms/essbereich-kueche.jpg';
+import essBereichTisch from '@/app/assets/images/rooms/essbereich-tisch.jpg';
+
+import ruhebereichShowcase from '@/app/assets/images/rooms/ruhebereich-showcase.jpg';
+import kueche from '@/app/assets/images/rooms/kueche.jpg';
+import wc1 from '@/app/assets/images/rooms/toilette-handtuecher.jpg';
+import wc2 from '@/app/assets/images/rooms/toilette-waschbecken.jpg';
+import wandbilder from '@/app/assets/images/rooms/wandbilder.jpg';
 export const tabs = [
     {
         navButton: 'Spielbereich',
-        image: room1,
+        image: spielbereichShowcase,
         titleText: 'Spielbereich',
         text: 'Unser großzügiger Spielbereich bietet verschiedene Aktivitätszonen, die speziell auf die Bedürfnisse und Interessen der Kinder abgestimmt sind. Hier können die Kleinen nach Herzenslust entdecken, experimentieren und ihre Kreativität entfalten.',
         subText: [
@@ -15,7 +30,7 @@ export const tabs = [
     },
     {
         navButton: 'Essbereich',
-        image: room2,
+        image: essbereichShowcase,
         titleText: 'Essbereich',
         text: 'In unserem gemütlichen Essbereich nehmen wir gemeinsam die Mahlzeiten ein. Hier lernen die Kinder nicht nur gesunde Ernährung kennen, sondern auch soziale Kompetenzen wie Tischmanieren und Gemeinschaft.',
         subText: [
@@ -27,7 +42,7 @@ export const tabs = [
     },
     {
         navButton: 'Ruhebereich',
-        image: room1,
+        image: ruhebereichShowcase,
         titleText: 'Ruhebereich',
         text: 'Unser Ruhebereich bietet den Kindern einen ruhigen Rückzugsort für Mittagsschlaf und Entspannung. Hier können die Kleinen neue Energie tanken und zur Ruhe kommen.',
         subText: [
@@ -39,4 +54,17 @@ export const tabs = [
     },
 ];
 
-export const impressions = [room1, room2, room1, room2, room1, room2, room1, room2];
+export const impressions = [
+    spielbereichKletterwand3,
+    garderobe,
+    spielbereichKletterwand2,
+    spielbereichStuhl,
+    spielbereichKletterwand,
+    spielbereichBodenLava,
+    essbereichKueche,
+    essBereichTisch,
+    kueche,
+    wc1,
+    wc2,
+    wandbilder,
+];

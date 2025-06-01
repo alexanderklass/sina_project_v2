@@ -7,8 +7,17 @@ export interface ILayout {
 }
 
 export const metadata: Metadata = {
-    title: "Sina's Schmetterlinge",
-    description: "Räumlichkeiten Seite von Sina's schmetterlinge",
+    title: "Unser Garten – Sina's Schmetterlinge",
+    description: 'Räumlichkeiten für die Kinder spielerisch gestaltet bei Sina\'s Schmetterlinge in Harrislee.',
+    keywords: 'Spielbereich, Spiele, Toben, Spielen, Kinder, Essbereich, Schlafen, Ruhebereich, Harrislee, Kindertagespflege, Sinas Schmetterlinge',
+    openGraph: {
+        title: "Unsere Räumlichkeiten – Sina's Schmetterlinge",
+        description: 'Naturnaher Garten für Kinder in Harrislee – Spiel, Spaß und Naturerfahrung.',
+        url: 'https://www.sinas-schmetterlinge.de/rooms',
+        siteName: "Sina's Schmetterlinge",
+        locale: 'de_DE',
+        type: 'website',
+    },
 };
 
 export default function RoomsLayout({ children }: Readonly<ILayout>) {

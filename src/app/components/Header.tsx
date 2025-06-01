@@ -46,10 +46,18 @@ export default function Header() {
                 <div
                     className={`py-2 lg:py-0 px-10 ${isOpen && isFocused ? 'h-full justify-center flex' : 'hidden'} z-20 lg:px-0 transition-all duration-300 lg:flex flex-col items-center xl:items-baseline space-y-3 lg:space-y-0 lg:flex-row lg:space-x-5`}
                 >
-                    <NavButton href={'/home'}>Start</NavButton>
-                    <NavButton href={'/rooms'}>Räumlichkeiten</NavButton>
-                    <NavButton href={'/garden'}>Garten</NavButton>
-                    <NavButton href={'/concept'}>Konzeption</NavButton>
+                    <NavButton label={'Startseite'} href={'/home'}>
+                        Start
+                    </NavButton>
+                    <NavButton label={'Unsere Räumlichkeiten'} href={'/rooms'}>
+                        Räumlichkeiten
+                    </NavButton>
+                    <NavButton label={'Unser Garten'} href={'/garden'}>
+                        Garten
+                    </NavButton>
+                    <NavButton label={'Unser Konzept'} href={'/concept'}>
+                        Konzeption
+                    </NavButton>
                     <NavButton href={'/impressum'}>Impressum</NavButton>
                 </div>
                 <SocialMedia />

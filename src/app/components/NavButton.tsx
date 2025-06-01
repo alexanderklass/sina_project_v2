@@ -8,6 +8,7 @@ import Link from 'next/link';
 export interface NavButtonProps {
     children: React.ReactNode;
     href?: string;
+    label?: string;
 }
 
 const josefin_sans = Josefin_Sans({
@@ -15,7 +16,7 @@ const josefin_sans = Josefin_Sans({
     subsets: ['latin'],
 });
 
-export default function NavButton({ children, href }: NavButtonProps) {
+export default function NavButton({ children, href, label }: NavButtonProps) {
     const pathname = usePathname();
     const isActive = pathname === href;
 
@@ -38,6 +39,7 @@ export default function NavButton({ children, href }: NavButtonProps) {
             ) : (
                 <Link
                     href={href || '#'}
+                    aria-label={label}
                     className={`${josefin_sans.className} group relative font-bold cursor-pointer`}
                 >
                     <FontText className={'text-2xl text-gray-600 lg:text-[14px]'}>{children}</FontText>
