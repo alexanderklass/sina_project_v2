@@ -26,7 +26,7 @@ export default function Rooms() {
                 <div>
                     <TitleFontText className={'text-[#5a8f7b] text-3xl'}>Impressionen</TitleFontText>
                 </div>
-                <div className={'grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 grid'}>
+                <div className={'grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 grid'}>
                     {impressions.map((impression, index) => (
                         <div
                             className={

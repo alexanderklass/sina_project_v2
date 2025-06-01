@@ -67,7 +67,7 @@ export default function Garden() {
                             </div>
                         </div>
                     </div>
-                    <div className={'grid grid-cols-3 gap-4 w-full items-center'}>
+                    <div className={'grid md:grid-cols-3 gap-4 w-full items-center'}>
                         <div className={'relative overflow-hidden rounded-xl shadow-xl w-full h-[200px]'}>
                             <Image className={'object-cover'} fill src={sandkasten_closeup} alt={'garden'} />
                         </div>
