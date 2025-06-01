@@ -10,7 +10,7 @@ interface TabsContentProps {
     active: boolean;
 }
 
-export default function TabsContent({ mainText, mainTextTitle, subTextArray, image, active }: TabsContentProps) {
+export default function TabsContent({ mainText, mainTextTitle, subTextArray, image }: TabsContentProps) {
     const initial = { opacity: 0, x: 300 };
     const exit = { opacity: 0, x: -300 };
     const animate = { opacity: 1, x: 0 };
