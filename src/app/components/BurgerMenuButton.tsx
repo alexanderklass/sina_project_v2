@@ -4,22 +4,13 @@ import React from 'react';
 
 interface BurgerMenuButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
     isOpen: boolean;
-    isFocused: boolean;
     handleClick: () => void;
-    handleBlur: () => void;
-    handleFocus: () => void;
 }
 
-export default function BurgerMenuButton({
-    isOpen,
-    isFocused,
-    handleClick,
-    handleBlur,
-    handleFocus,
-}: BurgerMenuButtonProps) {
+export default function BurgerMenuButton({ isOpen, handleClick }: BurgerMenuButtonProps) {
     return (
-        <button onFocus={handleFocus} onClick={handleClick} onBlur={handleBlur} className={'cursor-pointer lg:hidden'}>
-            {isOpen && isFocused ? (
+        <button onClick={handleClick} className={'cursor-pointer lg:hidden'}>
+            {isOpen ? (
                 <IoClose className={'animate-fade'} size={35} />
             ) : (
                 <RxHamburgerMenu className={'animate-fade'} size={35} />
