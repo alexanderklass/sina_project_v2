@@ -31,15 +31,27 @@ export default function Concept() {
                             Unsere pädagogischen Grundsätze
                         </FontText>
                         <FontText>
-                            Mein pädagogisches Konzept basiert auf einem ganzheitlichen Ansatz, der das Kind in seiner
-                            Individualität respektiert und fördert. Ich sehe jedes Kind als einzigartige Persönlichkeit
-                            mit eigenen Stärken, Interessen und Entwicklungstempi.
+                            Meine pädagogische Arbeit orientiert sich an den Bildungsleitlinien des Landes
+                            Schleswig-Holstein und ist inspiriert von der Montessori-Pädagogik: Das freie Spiel, die
+                            Selbsttätigkeit und die Freude am Entdecken stehen bei uns im Mittelpunkt.
                         </FontText>
                         <FontText>
-                            Die Kindertagespflege bietet durch ihre familiäre Atmosphäre und kleine Gruppengröße ideale
-                            Voraussetzungen für eine individuelle Betreuung und Förderung. In meiner Arbeit orientiere
-                            ich mich an verschiedenen pädagogischen Ansätzen und integriere Elemente, die den
-                            Bedürfnissen der Kinder entsprechen.
+                            Bei Treffen mit anderen Tagesmüttern – ob auf dem Spielplatz oder bei Spaziergängen im Wald
+                            – können die Kinder miteinander spielen und neue Kontakte knüpfen. Auch wir nutzen die Zeit,
+                            um uns auszutauschen, Erfahrungen zu teilen und neue Impulse für unseren Betreuungsalltag zu
+                            gewinnen.
+                        </FontText>
+                        <FontText>
+                            Mit dem Lastenrad und dem Bollerwagen machen wir regelmäßig kleine Ausflüge – zum Beispiel
+                            zum nahegelegenen Familienzentrum. Die Kinder genießen die Fahrt und freuen sich auf das
+                            Spielen vor Ort. Dort gibt es viel Raum zum Entdecken, Spielen und um andere Kinder zu
+                            treffen.
+                        </FontText>
+                        <FontText>
+                            Die Kindertagespflege bietet durch ihre familiäre Atmosphäre und kleine Gruppengröße mit bis
+                            zu 5 Kindern im Alter von 1-3 Jahren ideale Voraussetzungen für eine individuelle Betreuung
+                            und Förderung. In meiner Arbeit orientiere ich mich an verschiedenen pädagogischen Ansätzen
+                            und integriere Elemente, die den Bedürfnissen der Kinder entsprechen.
                         </FontText>
                         <div className={'flex flex-col gap-y-2'}>
                             <IconSubText

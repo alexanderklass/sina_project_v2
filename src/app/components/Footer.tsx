@@ -42,7 +42,7 @@ export default function Footer() {
                         />
                         <IconSubText
                             icon={<LuClock5 className={'text-lg text-[#FF9D5C]'} />}
-                            text={'Mo-Fr: 7:30 - 16:30 Uhr'}
+                            text={'Mo-Fr: 7:30 - 14:00 Uhr'}
                         />
                         <Button
                             newTab={true}

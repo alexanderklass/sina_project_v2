@@ -14,7 +14,7 @@ import FontText from '@/app/components/FontText';
 import { LuSunMedium } from 'react-icons/lu';
 import { LuLeaf } from 'react-icons/lu';
 import { LuDroplets } from 'react-icons/lu';
-import { LuCloud } from 'react-icons/lu'
+import { LuCloud } from 'react-icons/lu';
 import { GiButterfly } from 'react-icons/gi';
 import TitleFontText from '@/app/components/TitleFontText';
 import Card from '@/app/components/Card';
@@ -95,7 +95,7 @@ export default function Garden() {
                 <div className={'flex flex-col xl:flex-row gap-x-5 gap-y-5 xl:gap-y-0'}>
                     <Card
                         title={'Spielbereich'}
-                        text={'Sandkasten, Schaukeln, Rutsche und Klettergerüst für vielfältige Bewegungserfahrungen.'}
+                        text={'Sandkasten und Rutsche für vielfältige Bewegungserfahrungen.'}
                         color={'bg-pastel-beige'}
                         icon={<GiButterfly size={40} />}
                     />

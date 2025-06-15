@@ -15,6 +15,7 @@ import kueche from '@/app/assets/images/rooms/kueche.jpg';
 import wc1 from '@/app/assets/images/rooms/toilette-handtuecher.jpg';
 import wc2 from '@/app/assets/images/rooms/toilette-waschbecken.jpg';
 import wandbilder from '@/app/assets/images/rooms/wandbilder.jpg';
+
 export const tabs = [
     {
         navButton: 'Spielbereich',
@@ -23,7 +24,7 @@ export const tabs = [
         text: 'Unser großzügiger Spielbereich bietet verschiedene Aktivitätszonen, die speziell auf die Bedürfnisse und Interessen der Kinder abgestimmt sind. Hier können die Kleinen nach Herzenslust entdecken, experimentieren und ihre Kreativität entfalten.',
         subText: [
             'Bauecke mit verschiedenen Konstruktionsmaterialien',
-            'Rollenspielbereich mit Puppenküche und Verkleidungen',
+            'Kinderküche zum kochen und spielen',
             'Kreativecke zum Malen, Basteln und Gestalten',
             'Bücherecke mit gemütlichen Sitzkissen',
         ],
@@ -36,7 +37,7 @@ export const tabs = [
         subText: [
             'Kindgerechte Tische und Stühle',
             'Altersgerechtes Geschirr und Besteck',
-            'Ausgewogene und frisch zubereitete Mahlzeiten',
+            'Von mir ausgewogene und frisch zubereitete Mahlzeiten',
             'Gemeinsame Rituale vor und nach dem Essen',
         ],
     },

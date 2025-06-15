@@ -53,7 +53,13 @@ export default function Home() {
                                 'xl:h-[500px] h-[400px] w-[300px] xl:w-[400px] ring-8 ring-white relative overflow-hidden rounded-xl shadow-2xl'
                             }
                         >
-                            <Image src={portraitImage} className={'object-cover'} loading='lazy' fill alt={'Sinas Schmetterlinge Portrait Foto'} />
+                            <Image
+                                src={portraitImage}
+                                className={'object-cover'}
+                                loading="lazy"
+                                fill
+                                alt={'Sinas Schmetterlinge Portrait Foto'}
+                            />
                         </div>
                     </div>
                 </div>
@@ -61,16 +67,13 @@ export default function Home() {
 
             <section className={'bg-white relative flex items-center px-5 lg:px-0 justify-center'}>
                 <div className={'flex flex-col space-y-10 py-20 items-center justify-center w-full xl:w-[650px]'}>
-                    <TitleFontText className={'text-center text-3xl text-[#5a8f7b]'}>Herzlich Willkommen</TitleFontText>
+                    <TitleFontText className={'text-center text-3xl text-[#5a8f7b]'}>
+                        Kindertagespflege mit Herz - bei Sina
+                    </TitleFontText>
                     <FontText className={'text-center text-base 2xl:text-lg text-gray-800'}>
-                        Mein Name ist Sina ich bin X Jahre alt. Zu meiner Familie gehören mein Mann Tino und unsere
-                        Kinder Milan und Anissa. Während meiner Elternzeit entschied ich mich, meinen Traum zu
-                        verwirklichen: eine eigene Kindertagespflege.
-                    </FontText>
-                    <FontText className={'text-center text-base 2xl:text-lg text-gray-800'}>
-                        Mit viel Freude und Herz begleite ich Kinder auf ihrem Weg, zeige ihnen die Welt in all ihren
-                        Farben und fördere sie individuell. Meine Pflegeerlaubnis vom Jugendamt habe ich im Oktober 2024
-                        erhalten.
+                        Mein Name ist Sina ich bin 34 Jahre alt, liebevolle Mutter von zwei wunderbaren Kindern - einem
+                        Jungen und einem Mädchen. Mit meiner Erfahrung als Mama und große Leidenschaft für die Arbeit
+                        mit Kindern biete ich eine liebevolle, familiäre und individuelle Betreuung für die Kleinsten.
                     </FontText>
 
                     <button
