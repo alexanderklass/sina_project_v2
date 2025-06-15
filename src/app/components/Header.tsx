@@ -41,7 +41,9 @@ export default function Header() {
                     <NavButton label={'Unser Konzept'} href={'/concept'}>
                         Konzeption
                     </NavButton>
-                    <NavButton href={'/impressum'}>Impressum</NavButton>
+                    <NavButton setIsOpen={setIsOpen} href={'/impressum'}>
+                        Impressum
+                    </NavButton>
                 </div>
                 <SocialMedia />
             </div>

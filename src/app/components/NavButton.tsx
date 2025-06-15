@@ -9,6 +9,7 @@ export interface NavButtonProps {
     children: React.ReactNode;
     href?: string;
     label?: string;
+    setIsOpen?: any;
 }
 
 const josefin_sans = Josefin_Sans({
@@ -16,13 +17,14 @@ const josefin_sans = Josefin_Sans({
     subsets: ['latin'],
 });
 
-export default function NavButton({ children, href, label }: NavButtonProps) {
+export default function NavButton({ children, href, label, setIsOpen }: NavButtonProps) {
     const pathname = usePathname();
     const isActive = pathname === href;
 
     const handleScrollToBottom = (event: React.MouseEvent) => {
         event.preventDefault();
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        setIsOpen(false);
     };
     return (
         <>
